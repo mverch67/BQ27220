@@ -1,0 +1,25 @@
+{
+    "name": "BQ27220",
+    "version":"1.0.0",
+    "keywords": "BQ27220",
+    "description": "I2C Sensor Library for fuel gauge battery management",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/mverch67/BQ27220"
+    },
+    "authors":
+    [
+      {
+        "name":"mverch",
+        "email":"manuel@meshtastic.com",
+        "maintainer": true
+      }
+    ],
+    "frameworks": ["espidf", "arduino"],
+    "platforms": ["espressif32", "native"],
+    "build": {
+      "includeDir": "src",
+      "srcDir": "src"
+    }
+  }
