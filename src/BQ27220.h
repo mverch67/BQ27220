@@ -54,6 +54,11 @@ public:
     uint16_t getVolt(VOLT_MODE type);
     int16_t getCurr(CURR_MODE type);
     uint16_t getId();
+    uint16_t getDesignCapacity();
+    bool setDesignCapacity(uint16_t newDesignCapacity);
+    bool unseal();
+    bool seal();
+    bool isSealed();
 
 private:
     TwoWire *wire;
@@ -65,4 +70,5 @@ private:
     bool i2cWriteBytes(uint8_t subAddress, uint8_t *src, uint8_t count);
     uint16_t readWord(uint16_t subAddress);
     uint16_t readCtrlWord(uint16_t fun);
+    bool writeCtrlWord(uint16_t cmd);
 };
